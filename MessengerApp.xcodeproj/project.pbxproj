@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA64F22427B557EF00CE6908 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F22327B557EF00CE6908 /* UIButton + Extension.swift */; };
+		FA64F22727B55DB100CE6908 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F22627B55DB100CE6908 /* UIFont + Extension.swift */; };
+		FA64F22A27B55FB300CE6908 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F22927B55FB300CE6908 /* UIColor + Extension.swift */; };
+		FA64F22D27B5630800CE6908 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F22C27B5630800CE6908 /* UILabel + Extension.swift */; };
+		FA64F23027B56D7900CE6908 /* UIIamgeView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64F22F27B56D7900CE6908 /* UIIamgeView + Extension.swift */; };
 		FAB6B2AD27B543CA005529CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6B2AC27B543CA005529CE /* AppDelegate.swift */; };
 		FAB6B2AF27B543CA005529CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6B2AE27B543CA005529CE /* SceneDelegate.swift */; };
-		FAB6B2B127B543CA005529CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6B2B027B543CA005529CE /* ViewController.swift */; };
+		FAB6B2B127B543CA005529CE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6B2B027B543CA005529CE /* AuthViewController.swift */; };
 		FAB6B2B627B543D3005529CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB6B2B527B543D3005529CE /* Assets.xcassets */; };
 		FAB6B2B927B543D3005529CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6B2B727B543D3005529CE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA64F22327B557EF00CE6908 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		FA64F22627B55DB100CE6908 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		FA64F22927B55FB300CE6908 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		FA64F22C27B5630800CE6908 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		FA64F22F27B56D7900CE6908 /* UIIamgeView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIamgeView + Extension.swift"; sourceTree = "<group>"; };
 		FAB6B2A927B543CA005529CE /* MessengerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB6B2AC27B543CA005529CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB6B2AE27B543CA005529CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAB6B2B027B543CA005529CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAB6B2B027B543CA005529CE /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		FAB6B2B527B543D3005529CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB6B2B827B543D3005529CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB6B2BA27B543D3005529CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA64F23327B5904300CE6908 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FA64F22327B557EF00CE6908 /* UIButton + Extension.swift */,
+				FA64F22627B55DB100CE6908 /* UIFont + Extension.swift */,
+				FA64F22927B55FB300CE6908 /* UIColor + Extension.swift */,
+				FA64F22C27B5630800CE6908 /* UILabel + Extension.swift */,
+				FA64F22F27B56D7900CE6908 /* UIIamgeView + Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FA64F23427B5904B00CE6908 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA64F23327B5904300CE6908 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FAB6B2A027B543CA005529CE = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +86,11 @@
 			children = (
 				FAB6B2AC27B543CA005529CE /* AppDelegate.swift */,
 				FAB6B2AE27B543CA005529CE /* SceneDelegate.swift */,
-				FAB6B2B027B543CA005529CE /* ViewController.swift */,
+				FAB6B2B027B543CA005529CE /* AuthViewController.swift */,
 				FAB6B2B527B543D3005529CE /* Assets.xcassets */,
 				FAB6B2B727B543D3005529CE /* LaunchScreen.storyboard */,
 				FAB6B2BA27B543D3005529CE /* Info.plist */,
+				FA64F23427B5904B00CE6908 /* Extensions */,
 			);
 			path = MessengerApp;
 			sourceTree = "<group>";
@@ -133,9 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB6B2B127B543CA005529CE /* ViewController.swift in Sources */,
+				FA64F22727B55DB100CE6908 /* UIFont + Extension.swift in Sources */,
+				FAB6B2B127B543CA005529CE /* AuthViewController.swift in Sources */,
 				FAB6B2AD27B543CA005529CE /* AppDelegate.swift in Sources */,
+				FA64F22D27B5630800CE6908 /* UILabel + Extension.swift in Sources */,
+				FA64F22A27B55FB300CE6908 /* UIColor + Extension.swift in Sources */,
+				FA64F23027B56D7900CE6908 /* UIIamgeView + Extension.swift in Sources */,
 				FAB6B2AF27B543CA005529CE /* SceneDelegate.swift in Sources */,
+				FA64F22427B557EF00CE6908 /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
