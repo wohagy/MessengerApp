@@ -31,12 +31,42 @@ class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(emailButton)
+        setupConstraint()
     }
-
 
 }
 
+// MARK: Setup Constraint
+
+extension AuthViewController {
+    
+    private func setupConstraint() {
+        let googleStack = AuthStackView(label: googleLabel, button: googleButton)
+        
+        let emailStack = AuthStackView(label: emailLabel, button: emailButton)
+        
+        let alreadyOnboardStack = AuthStackView(label: alredyOnboardLabel, button: loginButton)
+        
+        let buttonStackView = UIStackView(arrangedSubviews: [googleStack,emailStack,alreadyOnboardStack], axis: .vertical, spacing: 40)
+        
+        let stackView = UIStackView(arrangedSubviews: [logoImageView,buttonStackView], axis: .vertical, spacing: 100)
+        
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(stackView)
+            
+        NSLayoutConstraint.activate([
+            
+            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
+        ])
+    }
+}
+
+// MARK: - SWIFT UI
 
 import SwiftUI
 
