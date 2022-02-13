@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthStackView: UIView {
+class ButtonFormView: UIView {
 
     init(label: UILabel, button: UIButton){
         super.init(frame: .zero)

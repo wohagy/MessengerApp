@@ -22,10 +22,10 @@ class AuthViewController: UIViewController {
     
     let emailButton = UIButton(title: "Email",
                                titleColor: .white,
-                               backgroundColor: .blackColor())
+                               backgroundColor: .buttonDark())
     
     let loginButton = UIButton(title: "Login",
-                               titleColor: .redColor(),
+                               titleColor: .buttonRed(),
                                backgroundColor: .white,
                                isShadow: true)
 
@@ -41,11 +41,11 @@ class AuthViewController: UIViewController {
 extension AuthViewController {
     
     private func setupConstraint() {
-        let googleStack = AuthStackView(label: googleLabel, button: googleButton)
+        let googleStack = ButtonFormView(label: googleLabel, button: googleButton)
         
-        let emailStack = AuthStackView(label: emailLabel, button: emailButton)
+        let emailStack = ButtonFormView(label: emailLabel, button: emailButton)
         
-        let alreadyOnboardStack = AuthStackView(label: alredyOnboardLabel, button: loginButton)
+        let alreadyOnboardStack = ButtonFormView(label: alredyOnboardLabel, button: loginButton)
         
         let buttonStackView = UIStackView(arrangedSubviews: [googleStack,emailStack,alreadyOnboardStack], axis: .vertical, spacing: 40)
         

@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         window = UIWindow(windowScene: scene)
         window?.backgroundColor = .white
-        window?.rootViewController = AuthViewController()
+        window?.rootViewController = SignUpViewController()
         window?.makeKeyAndVisible()
     }
 
